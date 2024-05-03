@@ -1,0 +1,73 @@
+{
+	"male": [
+		{
+			"title": "I want an icecream now !",
+			"text": "{female} est soudainement prise d'une envie subite de lécher une glace.\n\n{female} lèche la bite de {male} comme si c'était la meilleur glace que tu es mangé...",
+			"action": {
+				"type": "CHRONO",
+				"min": 60,
+				"max": 120,
+				"auto": false
+			}
+		},
+		{
+			"title": "I need a doctor",
+			"text": "{female} soulève ton haut {male} va procéder à l'examen de tes seins.",
+			"action": {
+				"type": "CHRONO",
+				"min": 10,
+				"max": 60,
+				"auto": false
+			}
+		},
+		{
+			"title": "Que calor !!",
+			"text": "{male} tu pris de bouffé de chaleur.\n\n retire un vêtement pour te soulager."
+		},
+		{
+			"title": "Be a good girl...",
+			"text": "{female} tu fais un peu trop la maligne... \n\nmets toi à genoux et suce {male} comme tu une gentille fille...",
+			"action": {
+				"type": "VIBRATE",
+				"speed": 0.8,
+				"min": 60,
+				"max": 300,
+				"auto": false
+			}
+		}
+	],
+	"female": [
+		{
+			"title": "Vvvvvr...",
+			"text": "Vous avez un appel...",
+			"action": {
+				"type": "VIBRATE",
+				"min": 1,
+				"max": 5
+			}
+		},
+		{
+			"title": "Don't move !",
+			"text": "{male} ne peux bouger, il est comme figé ! {female} fait lui ce qu'il te plaît !",
+			"action": {
+				"type": "CHRONO",
+				"min": 60,
+				"max": 180
+			}
+		},
+		{
+			"title": "Que calor !!",
+			"text": "{female} tu pris de bouffé de chaleur.\n\n retire un vêtement pour te soulager."
+		},
+		{
+			"title": "Lap Dance",
+			"text": "{female} assoie sur {male} et fait monter sa température.\n\nDéhanche toi sur lui à le rendre ivre de désire...",
+			"action": {
+				"type": "VIBRATE",
+				"min": 120,
+				"max": 300,
+				"auto": false
+			}
+		}
+	]
+}

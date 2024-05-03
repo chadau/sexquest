@@ -1,0 +1,26 @@
+<div class="relative">
+	<div class="card" (click)="flip()" (mouseenter)="toggleBlink(true)" (mouseleave)="toggleBlink(false)">
+		<div class="card-inner " [class.flipped]="this.isFlipped">
+			<div class="card-back z-10">
+				<div class="card-back-inner">
+				</div>
+			</div>
+			<div class="card-front z-10">
+				<div class="card-front-inner text-xl p-4 flex text-center items-strech justify-center">
+					<div class="grid grid-cols-1 gap-4 justify-items-center">
+						<div class="self-start text-2xl mt-4">{{this.cardTitle}}</div>
+						<div class="content">
+							{{this.text}}
+						</div>
+						@if (this.action) {
+							@if (this.launched && this.time != "") { <div class="self-center">{{this.time}}</div> }
+							@else if ((this.action.auto ?? true) == false && !this.finished) { <button class="pixel-btn h-fit border-white self-center" (click)="startEvent($event)">START</button> } <!-- Don't display the button if auto is not set at false (By default auto: true) -->
+						}
+					</div>
+				</div>
+			</div>
+			<div class="h-full w-full absolute bg-orange-900 opacity-50 z-0 top-0 card-blink"
+				[class.animate-ping]="this.blinked"></div>
+		</div>
+	</div>
+</div>

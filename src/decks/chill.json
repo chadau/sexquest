@@ -1,0 +1,206 @@
+{
+	"male": [
+		{
+			"title": "Sport Time",
+			"text": "{male}, quel sport aimerais-tu pratiquer avec {female} ?"
+		},
+		{
+			"title": "Cooking Challenge",
+			"text": "{male}, si tu devais préparer le plat préféré de {female}, que cuisinerais-tu ?"
+		},
+		{
+			"title": "Memory Lane",
+			"text": "{male}, raconte ton souvenir préféré avec {female}."
+		},
+		{
+			"title": "Dream House",
+			"text": "{male}, décris la maison de tes rêves avec {female}."
+		},
+		{
+			"title": "Hidden Talent",
+			"text": "{male}, révèle un talent caché à {female}."
+		},
+		{
+			"title": "Music Taste",
+			"text": "{male}, quelle est la chanson que tu aimerais dédier à {female} ?"
+		},
+		{
+			"title": "Adventure Time",
+			"text": "{male}, si tu pouvais partir en aventure avec {female}, où iriez-vous ?"
+		},
+		{
+			"title": "Pet Lover",
+			"text": "{male}, si tu devais adopter un animal de compagnie avec {female}, quel animal choisirais-tu ?"
+		},
+		{
+			"title": "Art Appreciation",
+			"text": "{male}, si tu devais peindre un tableau pour {female}, que représenterait-il ?"
+		},
+		{
+			"title": "Comedy Club",
+			"text": "{male}, raconte une blague à {female}."
+		},
+		{
+			"title": "Alien Encounter",
+			"text": "{male}, si {female} était un extraterrestre, quelle serait sa planète d'origine ?"
+		},
+		{
+			"title": "Time Travel",
+			"text": "{male}, si tu pouvais voyager dans le temps avec {female}, à quelle époque iriez-vous ?"
+		},
+		{
+			"title": "Superpower",
+			"text": "{male}, si {female} avait un super pouvoir, lequel serait-il ?"
+		},
+		{
+			"title": "Zombie Apocalypse",
+			"text": "{male}, si tu devais survivre à une apocalypse de zombies avec {female}, quelle serait votre stratégie ?"
+		},
+		{
+			"title": "Mystery Island",
+			"text": "{male}, si tu étais coincé sur une île déserte avec {female}, quel objet emporterais-tu ?"
+		},
+		{
+			"title": "Life Goals",
+			"text": "{male}, quels sont tes objectifs de vie et comment {female} peut-elle t'aider à les atteindre ?"
+		},
+		{
+			"title": "Personal Growth",
+			"text": "{male}, comment penses-tu avoir évolué en tant que personne depuis que tu es avec {female} ?"
+		},
+		{
+			"title": "Emotional Connection",
+			"text": "{male}, quel est le moment où tu t'es senti le plus proche émotionnellement de {female} ?"
+		},
+		{
+			"title": "Challenges Overcome",
+			"text": "{male}, quel a été le défi le plus difficile que tu as dû surmonter dans ta relation avec {female} et comment l'avez-vous surmonté ?"
+		},
+		{
+			"title": "Future Vision",
+			"text": "{male}, comment imagines-tu ta vie avec {female} dans 10 ans ?"
+		},
+		{
+			"title": "Romantic Gestures",
+			"text": "{male}, quelle est la chose la plus romantique que tu aies jamais faite pour {female} ?"
+		},
+		{
+			"title": "Close Connection",
+			"text": "{male}, quel est le moment où tu t'es senti le plus proche de {female} ?"
+		},
+		{
+			"title": "Love Language",
+			"text": "{male}, comment exprimes-tu ton amour pour {female} ?"
+		},
+		{
+			"title": "Heartfelt Compliment",
+			"text": "{male}, quel est le plus beau compliment que tu aies jamais fait à {female} ?"
+		},
+		{
+			"title": "Special Memory",
+			"text": "{male}, quel est ton souvenir le plus précieux avec {female} ?"
+		}
+	],
+	"female": [
+		{
+			"title": "Dance Off",
+			"text": "{female}, quelle danse aimerais-tu apprendre avec {male} ?"
+		},
+		{
+			"title": "Book Club",
+			"text": "{female}, si tu devais choisir un livre pour {male}, lequel serait-il ?"
+		},
+		{
+			"title": "Childhood Memory",
+			"text": "{female}, raconte un souvenir d'enfance à {male}."
+		},
+		{
+			"title": "Dream Vacation",
+			"text": "{female}, si tu pouvais partir en vacances n'importe où avec {male}, où irais-tu ?"
+		},
+		{
+			"title": "Surprise Gift",
+			"text": "{female}, si tu devais offrir un cadeau surprise à {male}, qu'est-ce que ce serait ?"
+		},
+		{
+			"title": "Fashion Forward",
+			"text": "{female}, si tu devais choisir une tenue pour {male}, que choisirais-tu ?"
+		},
+		{
+			"title": "Foodie Fun",
+			"text": "{female}, si tu devais cuisiner le plat préféré de {male}, que cuisinerais-tu ?"
+		},
+		{
+			"title": "Nature Lover",
+			"text": "{female}, si tu pouvais planter un arbre avec {male}, quel type d'arbre choisirais-tu ?"
+		},
+		{
+			"title": "Stargazing",
+			"text": "{female}, si tu pouvais nommer une étoile après {male}, comment l'appellerais-tu ?"
+		},
+		{
+			"title": "Game Night",
+			"text": "{female}, si tu devais choisir un jeu de société pour jouer avec {male}, lequel choisirais-tu ?"
+		},
+		{
+			"title": "Magical Creature",
+			"text": "{female}, si {male} était une créature magique, laquelle serait-il ?"
+		},
+		{
+			"title": "Fairy Tale",
+			"text": "{female}, si ta vie avec {male} était un conte de fées, lequel serait-il ?"
+		},
+		{
+			"title": "Secret Identity",
+			"text": "{female}, si {male} avait une identité secrète, quelle serait-elle ?"
+		},
+		{
+			"title": "Treasure Hunt",
+			"text": "{female}, si tu devais partir en chasse au trésor avec {male}, où chercherais-tu ?"
+		},
+		{
+			"title": "Underwater Adventure",
+			"text": "{female}, si tu pouvais explorer un monde sous-marin avec {male}, où iriez-vous ?"
+		},
+		{
+			"title": "Life Lessons",
+			"text": "{female}, quelle est la leçon de vie la plus importante que tu as apprise de ta relation avec {male} ?"
+		},
+		{
+			"title": "Shared Experiences",
+			"text": "{female}, quelle est l'expérience partagée la plus significative que tu as eue avec {male} ?"
+		},
+		{
+			"title": "Personal Changes",
+			"text": "{female}, en quoi penses-tu avoir changé en tant que personne depuis que tu es avec {male} ?"
+		},
+		{
+			"title": "Emotional Support",
+			"text": "{female}, comment {male} t'a-t-il soutenue émotionnellement dans les moments difficiles ?"
+		},
+		{
+			"title": "Dreams and Aspirations",
+			"text": "{female}, quels sont tes rêves et aspirations et comment {male} peut-il t'aider à les réaliser ?"
+		},
+		{
+			"title": "Deep Connection",
+			"text": "{female}, quand as-tu ressenti un lien profond avec {male} pour la première fois ?"
+		},
+		{
+			"title": "Acts of Love",
+			"text": "{female}, quel est l'acte d'amour de {male} qui t'a le plus touchée ?"
+		},
+		{
+			"title": "Emotional Moment",
+			"text": "{female}, quel a été le moment le plus émouvant entre toi et {male} ?"
+		},
+		{
+			"title": "Heart's Desire",
+			"text": "{female}, qu'est-ce que tu désires le plus dans ta relation avec {male} ?"
+		},
+		{
+			"title": "Love Expression",
+			"text": "{female}, comment préfères-tu que {male} exprime son amour pour toi ?"
+		}
+	]
+}

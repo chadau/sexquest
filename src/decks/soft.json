@@ -1,0 +1,37 @@
+{
+	"male": [
+		{
+			"title": "Naughty Girl...",
+			"text": "{female} a été une vilaine fille !\n elle mérite bien une correction.\n\n10 fessées pour {female}"
+		},
+		{
+			"title": "Spa Time",
+			"text": "{female} a passé une dure journée, elle a bien mérité un massage !\n\n {female} choisi où tu veux te faire masser {male} va te masser.",
+			"action": {
+				"type": "CHRONO",
+				"min": 300,
+				"max": 600,
+				"auto": false
+			}
+		},
+		{
+			"title": "A Strong Man",
+			"text": "{male} montre à {female} comme tu es fort !\n\n{male} fait autant de pompe que possible {female} compte.",
+			"action": {
+				"type": "CHRONO",
+				"min": 60,
+				"max": 180,
+				"auto": false
+			}
+		}
+	],
+	"female": [
+		{
+			"text": "On dirait que que quelqu'un va avoir un petit déjeuner au lit !\n\n{male} tu rapportes les croissants"
+		},
+		{
+			"title": "Oui Oui Baguette",
+			"text": "{female} a défaut d'avoir du vin et du fromage, montre nous ta \"French Touch\".\n\nFait ton meilleur French kiss à {male}"
+		}
+	]
+}

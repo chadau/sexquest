@@ -1,0 +1,12 @@
+<div class="grid grid-cols-1 gap-40 w-full">
+	<h1 class="text-9xl justify-self-center"><span [style.color]="this.game.currentPlayer?.name == this.game.Male?.name ? 'blue' : 'fuchsia'">{{this.game.currentPlayer?.name}}</span> turn</h1>
+	<div class="flex  justify-around">
+		<sexquest-simple-card #choiceOne text="Good choice" (launchedChange)="this.cardIsActivated($event)" cardTitle="On essaye"/>
+		<sexquest-simple-card #choiceTwo text="Bad choice" (launchedChange)="this.cardIsActivated($event)" />
+	</div>
+	@if (!this.actionIsWorking) {
+	<button class="pixel-btn justify-self-center text-3xl" (click)="this.nextTurn()">NEXT TURN</button>
+	} @else {
+		<button class="pixel-btn justify-self-center text-3xl" (click)="this.skip()">SKIP</button>
+	}
+</div>

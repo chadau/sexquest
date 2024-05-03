@@ -1,0 +1,30 @@
+<div class="setting absolute top-10 right-10 w-24">
+	<button (click)="addSextoy()">
+		<img src="/assets/pvm.png">
+	</button>
+</div>
+<div class="grid grid-cols-1 gap-40">
+	<h1 class="text-9xl">Choose your heroes !</h1>
+	<div class="flex justify-around">
+		<div *ngTemplateOutlet="characterView; context: {name: 'Adam', player: playerMale}"></div>
+		<div *ngTemplateOutlet="characterView; context: {name: 'Eve', player: playerFemale}"></div>
+	</div>
+	<button class="pixel-btn justify-self-center text-3xl" (click)="startGame()">START GAME</button>
+</div>
+
+
+<ng-template #characterView let-name="name" let-player="player">
+	<div class="grid grid-cols-1 gap-4">
+		<div class="character">
+			<img src="/assets/{{name}}.png">
+		</div>
+		<input type="text" placeholder="{{name}}" class="text-lg" [(ngModel)]="player.name">
+		<select [(ngModel)]="player.sextoyId">
+			<option value="-1">--Select a sextoy--</option>
+			@for (sextoy of this.sextoys; track $index) {
+				<option [value]="sextoy.index">{{sextoy.name}}</option>
+			}
+		</select>
+	</div>
+	
+</ng-template>
