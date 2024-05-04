@@ -73,7 +73,8 @@ export class SextoyService {
 	}
 
 	public async stop() {
-		this.vibrate(0);
+		for ( var device of this.devices )
+			await device.stop();
 	}
 
 	public getSextoys(): ButtplugClientDevice[] {

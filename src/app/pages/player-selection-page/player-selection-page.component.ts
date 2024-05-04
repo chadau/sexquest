@@ -18,9 +18,9 @@ export class PlayerSelectionPageComponent implements OnInit{
 	public playerFemale: Player = new Player("");
 
 	constructor(private sextoy: SextoyService, private game: GameService, private router: Router) {
-		
 	}
-	ngOnInit(): void {
+	async ngOnInit(): Promise<void> {
+		await this.sextoy.debug_mode();
 	}
 
 	public async addSextoy() {

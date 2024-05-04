@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { GameService } from '../../services/game.service';
 import { SimpleCardComponent } from '../../cards/simple-card/simple-card.component';
 import { Card } from '../../class/card';
+import { SextoyService } from '../../services/sextoy.service';
 
 @Component({
 	selector: 'app-game-page',
@@ -19,7 +20,7 @@ export class GamePageComponent implements AfterViewInit {
 
 	protected actionIsWorking: boolean = false;
 
-	constructor(public game: GameService) {
+	constructor(public game: GameService, private sextoy: SextoyService) {
 	}
 
 	ngAfterViewInit(): void {
@@ -44,9 +45,10 @@ export class GamePageComponent implements AfterViewInit {
 		this.game.nextTurn();
 	}
 
-	public skip() {
+	public async skip() {
 		this.choiceOne.cancelAction();
 		this.choiceTwo.cancelAction();
+		await this.sextoy.stop();
 	}
 
 	protected cardIsActivated(launched: boolean) {
