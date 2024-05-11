@@ -48,7 +48,6 @@ export class GamePageComponent implements AfterViewInit {
 	public async skip() {
 		this.choiceOne.cancelAction();
 		this.choiceTwo.cancelAction();
-		await this.sextoy.stop();
 	}
 
 	protected cardIsActivated(launched: boolean) {

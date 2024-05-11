@@ -4,7 +4,7 @@
 			"title": "I want an icecream now !",
 			"text": "{female} est soudainement prise d'une envie subite de lécher une glace.\n\n{female} lèche la bite de {male} comme si c'était la meilleur glace que tu es mangé...",
 			"action": {
-				"type": "CHRONO",
+				"type": "VIBRATE",
 				"min": 60,
 				"max": 120,
 				"auto": false
@@ -42,8 +42,8 @@
 			"text": "Vous avez un appel...",
 			"action": {
 				"type": "VIBRATE",
-				"min": 1,
-				"max": 5
+				"min": 30,
+				"max": 60
 			}
 		},
 		{

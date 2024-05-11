@@ -1,9 +1,9 @@
 import { Injectable, inject } from '@angular/core';
 import { Player } from '../class/player';
-import { Card } from '../class/card';
-import fs from 'fs';
+import { Card, CardController } from '../class/card';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { SextoyService } from './sextoy.service';
 
 @Injectable({
 	providedIn: 'root'
@@ -15,7 +15,7 @@ export class GameService {
 	private maleDeck: Card[] = [];
 	private femaleDeck: Card[] = [];
 
-	constructor(private http: HttpClient) {
+	constructor(private http: HttpClient, private sextoy: SextoyService) {
 		this.loadDeck("soft");
 		this.loadDeck("hot");
 		this.loadDeck("chill");
@@ -71,6 +71,8 @@ export class GameService {
 				break;
 		}
 
+		console.log(this.maleDeck);
+		console.log(this.femaleDeck);
 		console.log("Next turn: ", this.activePlayer?.name);
 	}
 
@@ -78,19 +80,23 @@ export class GameService {
 		return this.playerFemale != undefined && this.playerMale != undefined ? true : false;
 	}
 
-	private getRandomCard(deck: Card[]): Card {
+	private getRandomCard(deck: Card[]): CardController {
 		const index = Math.floor(Math.random() * deck.length);
 		let card: Card = deck[index];
 
 		card.text = this.resolveToken(card.text);
-		return card;
+
+		let cardCtrl: CardController = new CardController(index, card, deck);
+		cardCtrl.setSextoyService(this.sextoy);
+		
+		return cardCtrl;
 	}
 
-	public getMaleCard(): Card {
+	public getMaleCard(): CardController {
 		return this.getRandomCard(this.maleDeck);
 	}
 
-	public getFemaleCard(): Card {
+	public getFemaleCard(): CardController {
 		return this.getRandomCard(this.femaleDeck);
 	}
 
@@ -121,7 +127,7 @@ export class GameService {
 	}
 
 	//https://bost.ocks.org/mike/shuffle/
-	public shuffle(array: Card[]): Card[] {
+	public shuffle<T>(array: Array<T>): Array<T> {
 		var m = array.length, t, i;
 
 		// While there remain elements to shuffle…

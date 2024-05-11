@@ -2,7 +2,13 @@
 	"male": [
 		{
 			"title": "Naughty Girl...",
-			"text": "{female} a été une vilaine fille !\n elle mérite bien une correction.\n\n10 fessées pour {female}"
+			"text": "{female} a été une vilaine fille !\n elle mérite bien une correction.\n\n10 fessées pour {female}",
+			"action": {
+				"type": "VIBRATE",
+				"min": 60,
+				"max": 300,
+				"auto": false
+			}
 		},
 		{
 			"title": "Spa Time",
@@ -27,7 +33,8 @@
 	],
 	"female": [
 		{
-			"text": "On dirait que que quelqu'un va avoir un petit déjeuner au lit !\n\n{male} tu rapportes les croissants"
+			"text": "On dirait que que quelqu'un va avoir un petit déjeuner au lit !\n\n{male} tu rapportes les croissants",
+			"once": true
 		},
 		{
 			"title": "Oui Oui Baguette",

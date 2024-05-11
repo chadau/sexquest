@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Card } from '../../class/card';
+import { Card, CardController } from '../../class/card';
 import { Action, ActionType } from '../../class/action';
 import { SextoyService } from '../../services/sextoy.service';
 import { AsyncPipe } from '@angular/common';
@@ -15,6 +15,7 @@ import { Subscription, interval, take, timer } from 'rxjs';
 export class SimpleCardComponent {
 
 	private chronoCancelToken?: Subscription;
+	public card?: CardController;
 	protected action?: Action;
 	// State variables
 	protected launched: boolean = false;
@@ -41,6 +42,8 @@ export class SimpleCardComponent {
 		if (this.isFlipped)
 			return;
 
+		this.card?.activate();
+
 		this.isFlipped = true;
 		this.blinked = false;
 
@@ -62,7 +65,7 @@ export class SimpleCardComponent {
 		this.blinked = state;
 	}
 
-	public setCard(card: Card) {
+	public setCard(card: CardController) {
 		this.cardTitle = card.title;
 		this.text = card.text;
 		this.action = card.action;
@@ -70,6 +73,8 @@ export class SimpleCardComponent {
 		// Reset state variable
 		this.launched = false;
 		this.finished = false;
+
+		this.card = card;
 	}
 
 	public async startAction() {
@@ -99,7 +104,7 @@ export class SimpleCardComponent {
 		}
 	}
 
-	public cancelAction() {
+	public async cancelAction() {
 		if (!this.chronoCancelToken)
 			return;
 
@@ -109,6 +114,7 @@ export class SimpleCardComponent {
 		this.setLaunched(false);
 		this.finished = true;
 		this.time = "";
+		await this.card?.stop();
 	}
 
 	private setLaunched(value: boolean) {
