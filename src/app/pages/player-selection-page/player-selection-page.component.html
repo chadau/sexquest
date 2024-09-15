@@ -4,8 +4,8 @@
 	</button>
 </div>
 <div class="grid grid-cols-1 gap-40">
-	<h1 class="text-9xl">Choose your heroes !</h1>
-	<div class="flex justify-around">
+	<h1 class="text-6xl xl:text-8xl">Choose your heroes !</h1>
+	<div class="flex justify-around gap-12">
 		<div *ngTemplateOutlet="characterView; context: {name: 'Adam', player: playerMale}"></div>
 		<div *ngTemplateOutlet="characterView; context: {name: 'Eve', player: playerFemale}"></div>
 	</div>

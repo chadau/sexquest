@@ -33,7 +33,7 @@
 		},
 		{
 			"title": "Que calor !!",
-			"text": "{female} tu pris de bouffé de chaleur.\n\n retire un vêtement pour te soulager."
+			"text": "{female} tu es pris de bouffé de chaleur.\n\n retire un vêtement pour te soulager."
 		},
 		{
 			"title": "Make a choice",
@@ -41,7 +41,12 @@
 			"once": true
 		},
 		{
-			"title": "Dominatrice !",
+			"title": "Insult me",
+			"text": "{female} est-ce que tu aimes qu'on te parle mal pendant l'acte ?",
+			"once": true
+		},
+		{
+			"title": "Little pussy",
 			"text": "{female} mets toi face contre terre et montre ta petite chatte {male}. \n\nAttention {male} on touche avec les yeux !",
 			"action": {
 				"type": "VIBRATE",
@@ -77,6 +82,16 @@
 			"title": "Censure",
 			"text": "{female} as tu une envie sexuelle particulière que tu n'as jamais avoué à {male} par honte ?",
 			"once": true
+		},
+		{
+			"title": "Photo bomb !",
+			"text": "Councours photo ! prenez chacun une photo torride (avec l'aide ou non de l'autre).\n Celui qui fait la photo la plus HOT impose le gage du perdant.",
+			"once": true
+		},
+		{
+			"title": "Threesome",
+			"text": "Si tu devais choisir une de tes amies pour faire un plan à trois, qui choisirai ? Justifie.",
+			"once": true
 		}
 	],
 	"female": [
@@ -100,7 +115,7 @@
 		},
 		{
 			"title": "Que calor !!",
-			"text": "{male} tu pris de bouffé de chaleur.\n\n retire un vêtement pour te soulager."
+			"text": "{male} tu es pris de bouffé de chaleur.\n\n retire un vêtement pour te soulager."
 		},
 		{
 			"title": "Lap Dance",
@@ -114,7 +129,7 @@
 		},
 		{
 			"title": "Dominatrice !",
-			"text": "{female} Attache {male} au lit.\nFait lui ce qui te plait durant les prochaines minute",
+			"text": "{female} Attache {male} au lit.\nFait lui ce qui te plait durant les prochaines minutes",
 			"action": {
 				"type": "VIBRATE",
 				"min": 60,
@@ -124,7 +139,8 @@
 		},
 		{
 			"title": "What My Quality",
-			"text": "{male} cite trois qualités sexuelles que tu adores chez {female}."
+			"text": "{male} cite trois qualités sexuelles que tu adores chez {female}.",
+			"once": true
 		},
 		{
 			"title": "Make a choice",
