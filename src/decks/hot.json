@@ -77,7 +77,7 @@
 			"title": "Censure",
 			"text": "{female} as tu une envie sexuelle particulière que tu n'as jamais avoué à {male} par honte ?",
 			"once": true
-		},
+		}
 	],
 	"female": [
 		{
@@ -145,6 +145,6 @@
 				"max": 30,
 				"auto": false
 			}
-		},
+		}
 	]
 }
